@@ -1,0 +1,366 @@
+/* CSS = Cascading Stylesheets */
+/*
+
+CSS Selector {
+	property: value;
+}
+
+-----*/
+/*base styles*/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Suez One', serif;
+}
+section {
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+}
+.wrap {
+	width: 60%;
+}
+h1, h2, div p {
+	margin: 5px 15px;
+}
+h1 {
+	margin: 10px 20px;
+	font-size: 2em;
+	text-transform: uppercase;
+	color: white;
+	font-weight: lighter;
+}
+h2 {
+	font-size: 1.25em;
+}
+p {
+	max-width: 400px;
+	margin: auto;
+}
+div {
+	display: inline-block;
+	width: 20%;
+	margin: 50px 25px;
+	text-align: center;
+}
+img {
+	width: 100%;
+	margin: 0;
+	vertical-align: middle;
+}
+button {
+	display: block;
+	padding: 15px;
+	margin: 50px auto;
+	border: none;
+	border-radius: 5px;
+	background-color: white;
+	font-family: 'Suez One', serif;
+}
+li {
+	display: inline-block;
+	padding: 5px 15px;
+	border-radius: 5px;
+}
+i {
+	border-radius: 50%;
+	padding: 5px;
+	height: 15px;
+	width: 15px;
+	margin: 15px 5px;
+}
+hr {
+	margin: 25px auto;
+	width: 60%;
+}
+/*styling the nav bar*/
+nav {
+	margin: 0;
+	text-align: center;
+}
+nav ul {
+	padding: 10px 0;
+	margin: 0 0 20px;
+}
+nav li {
+	color: #333;
+}
+nav li.left {
+	padding: 6px 0;
+	text-transform: uppercase;
+}
+nav li#name {
+	margin-right: 100px;
+}
+nav a li:hover {
+	background-color: grey;
+	color: white;
+}
+/*styling the 'awesome' section*/
+#awesome {
+	background-color: skyblue;
+}
+#awesome div {
+	width: 60%;
+	margin: auto;
+}
+#awesome h1 {
+	display: inline-block;
+	width: 275px;
+}
+#awesome img {
+	display: inline-block;
+	width: 250px;
+}
+#circles {
+	display: block;
+	text-align: center;
+}
+#circles ul {
+	padding: 0;
+}
+#circles li {
+	border: 1px solid white;
+	border-radius: 50%;
+	padding: 5px;
+	margin: 0 3px;
+}
+#circles li:hover {
+	background-color: white;
+}
+/*styling the 'features' section*/
+#features {
+	text-align: center;
+}
+#features img {
+	height: 75px;
+	width: initial;
+}
+/*styling the 'works' section*/
+#works {
+	background-color: mediumaquamarine;
+	color: white;
+}
+#works ul {
+	margin: 50px 0;
+}
+#works li {
+	padding: 5px 15px;
+}
+#works a {
+	color: white;
+	text-decoration: none;
+	border: 1px solid rgba(255, 255, 255, 0);
+	border-radius: 5px;
+	padding: 5px 0;
+}
+#works a:hover {
+	border-color: white;
+}
+#works a:active {
+	border-color: white;
+	background-color: white;
+	color: grey;
+}
+#works .art {
+	display: inline-block;
+	height: 250px;
+	width: 250px;
+	background-size: cover;
+	background-position: bottom;
+	overflow: hidden;
+	margin: 10px 20px;
+}
+#art1 {
+	background-image: url(../img/art1.jpg);
+}
+#art2 {
+	background-image: url(../img/art2.jpg);
+}
+#art3 {
+	background-image: url(../img/art3.jpg);
+}
+#art4 {
+	background-image: url(../img/art4.jpg);
+}
+#art5 {
+	background-image: url(../img/art5.jpg);
+}
+#art6 {
+	background-image: url(../img/art6.jpg);
+}
+#works button {
+	color: grey;
+}
+/*styling the 'layered' section*/
+#layered {
+	background-color: #eee;
+}
+#layered h1 {
+	color: black;
+}
+#layered img {
+	width: initial;
+}
+#layered img, div {
+	display: inline-block;
+	margin: 25px 15px;
+	vertical-align: top;
+}
+#layered div {
+	text-align: left;
+	width: 500px;
+}
+#layered button {
+	color: white;
+}
+.green {
+	background-color: mediumaquamarine;
+	margin: 50px 15px;
+}
+.blue {
+	background-color: skyblue;
+	margin: 50px 15px;
+}
+/*styling the 'team' section*/
+#team {
+	background-color: lightcoral;
+	color: white;
+}
+#team div {
+	background-color: white;
+	color: black;
+}
+#team h1, #team h2, #team div p {
+	margin: 5px 15px;
+}
+#team i {
+	color: white;
+}
+#team .fa-facebook-f {
+	background-color: royalblue;
+}
+#team .fa-twitter {
+	background-color: lightblue;
+}
+#team .fa-pinterest-p {
+	background-color: red;
+}
+/*styling 'posts' section*/
+#posts {
+	background-color: skyblue;
+}
+#posts h1 {
+	color: black;
+}
+#posts div {
+	background-color: white;
+	color: black;
+}
+#posts h1, #posts h2, #posts div p {
+	margin: 5px 15px;
+}
+#posts div h1 {
+	font-size: 1.5em;
+}
+#posts div h2 {
+	font-style: italic;
+	font-size: 1em;
+}
+#posts button {
+	color: skyblue;
+}
+/*styling 'contact' section*/
+#contact {
+	color: white;
+	background-color: dimgrey;
+}
+#contact h1, #contact p {
+	margin: 5px auto;
+}
+#contact form {
+	margin: 50px 0;
+}
+#contact form input, #contact form textarea {
+	width: 50%;
+	display: block;
+	margin: 10px auto;
+	border-radius: 5px;
+	padding: 5px;
+	border: none;
+	font-size: 1em;
+	font-family: 'Suez One', serif;
+}
+#contact form input {
+	height: 25px;
+}
+#contact form textarea {
+	resize: none;
+}
+#contact button {
+	color: dimgrey;
+}
+#contact .wrap {
+	text-align: left;
+}
+#contact ul {
+	display: inline-block;
+	padding: 0;
+	text-align: center;
+	margin-right: 10%;
+}
+#contact li {
+	padding: 0;
+}
+#contact i {
+	background-color: grey;
+	height: 2em;
+	width: 2em;	
+}
+#contact .fab {
+	color: white;
+	line-height: 2em;
+}
+#contact span p {
+	font-size: .75em;
+	display: inline-block;
+}
+#contact p i {
+	background-color: initial;
+	height: initial;
+	width: initial;
+	margin: 0;
+	padding: 0;
+}
+#contact a {
+	color: gold;
+	text-decoration: none;
+}
+.vr {
+	display: inline-block;
+	width: 1px;
+	height: 15px;
+	margin: 0 10px;
+	border: none;
+	border-right: 1px solid white;
+	vertical-align: middle;
+}
+/*making the footer responsive*/
+@media (max-width: 1140px) {
+	#contact ul {
+		display: block;
+		margin: auto;
+	}
+	#contact span {
+		display: block;
+		text-align: center;
+	}
+}
+@media (max-width: 665px) {
+	#contact span p {
+		display: block;
+	}
+	.vr {
+		display: none;
+	}
+}
